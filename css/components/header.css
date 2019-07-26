@@ -1,0 +1,27 @@
+header.header{
+	background-color: #ffffff;
+	padding: 28px 0 22px;
+}
+.header>.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.block-logo{
+	margin-right: auto;
+}
+.logo{
+	display: block;
+	width: 202px;
+	height: 37px;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+.logo:hover{opacity: 0.85;}
+.logo img{
+	display: block;
+	width: 100%;
+	height: auto;
+}

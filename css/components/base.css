@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'open_sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  background: #fff;
+  color: #000;
+  font-weight: 400;
+}
+
+body {  
+  margin: 0;
+}
+.container{
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+a, .link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1, * + h2, * + h3,* + h4,* + h5,* + h6 {
+  margin:0.67em 0 0 0;
+}
+
+p, ul, ol {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+* + p, * + ul, * + ol {
+  margin-top: 15px;
+}
+
+ul > li > ol,
+ul > li > ul,
+ol > li > ul,
+ol > li > ol {
+  margin: 0;
+}
+input, textarea{
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  padding: 16px 28px;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #cecfd2;
+}

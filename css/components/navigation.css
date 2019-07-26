@@ -1,0 +1,76 @@
+.block-nav{margin: 0 -20px 0 0;}
+.nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 5px 0 0;
+}
+.nav .nav-item{
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.84;
+    color: #2d394c;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 44px 10px 0;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.nav .nav-item:last-child{
+    margin: 0 0 10px;
+}
+.nav .nav-item:hover{
+    color:#65a9d8;
+}
+.nav-mobile ul{
+    list-style-type: none;
+    display: ;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #ffce54;
+    padding:10px;
+    margin: 0;
+}
+.nav-mobile .nav-toggle{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #66aada;
+}
+.nav-mobile{
+    position: relative;
+}
+.nav-mobile{display: none;}
+.nav-mobile ul.is-open {
+    display: block;
+}
+/*
+
+.nav-mobile ul.is-open {
+  display: block;
+}
+.nav-mobile ul li{
+  padding: 0 10px;
+}
+.nav-mobile{
+  position: relative;
+  display: none; 
+}
+*/
+@media (min-width: 960px) {
+  /*.nav {
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }*/
+}
