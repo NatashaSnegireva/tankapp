@@ -1,6 +1,8 @@
 main{
 	width: 100%;
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
 }
 .hero{
     width: 100%;
@@ -9,14 +11,47 @@ main{
 .hero-container{
 	display: flex;
 	padding: 92px 0 0;
+	position: relative;
 }
 .hero-foreground{
 	width: 58%;
 	padding: 130px 117px 0 50px;
+	z-index: 2;
+	position: relative;
 }
 .hero-image{
 	width: 42%;
 	padding: 2px 0 0;
+	z-index: 2;
+	position: relative;
+}
+.box-cloud{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+.cloud-first{
+	position: absolute;
+	top: 147px;
+	left: 8%;
+}
+.cloud-second{
+	position: absolute;
+	bottom: 88px;
+	left: 10.2%;
+}
+.cloud-third{
+	position: absolute;
+	top: 230px;
+	right: 14.3%;
+}
+.cloud-fourth{
+	position: absolute;
+	bottom: 113px;
+	right: 5.3%;
 }
 h1{
 	font-family: 'ubuntu', sans-serif;
@@ -117,10 +152,7 @@ h3{margin: 0 0 35px;}
 .col-2{
 	width: 50.5%;
 }
-.col-2 image{
-	display: block;
-	margin: 0 0 6px;
-}
+.hold-image{margin: 0;}
 .why-list{
 	list-style-type: none;
 	max-width: 505px;
@@ -289,4 +321,121 @@ ul.list-social{
 	font-weight: 400;
 	line-height: 33.94px;
 }
-
+@media (max-width: 1300px) {
+	.block-nav{margin: 0;}
+}
+@media (max-width: 1200px) {
+	.hero-foreground{padding-top: 0;}
+}
+@media (max-width: 990px) {
+	.hero-foreground{padding: 0 40px;}
+	h1{
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.cloud-first{top:40px;}
+	.cloud-third{top: 30px;}
+	.why,
+	.different,
+	.time{padding: 50px 0;}
+	h2,h3{margin: 0 0 25px;}
+	.why .row{
+		padding: 0;
+		flex-direction: column-reverse;
+	}
+	.why .row .col-1,
+	.why .row .col-2{
+		width: 100%;
+	}
+	.hold-image {margin: 0 0 15px;}
+	.hold-image img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.why-list{max-width: 100%;}
+	.why-list li{margin: 0 0 10px;}
+	.different .box-slider{
+		padding: 0 0 65px;
+		margin: 0 0 10px;
+	}
+	.footer .nav .nav-item{margin: 0 14px 10px 0;}
+	ul.list-social{margin: -4px 0 0 5px;}
+}
+@media (max-width: 770px) {
+    .header>.container{
+        align-items: center;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+    }
+    h1,h2, h3{
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.hero-description{margin: 0 0 20px;}
+	.hold-input{padding: 0 120px 0 0;}
+	input, textarea{
+		padding: 16px 5px;
+		font-size: 16px;
+	}
+	.list-header,
+	.swiper-slide .list-header{
+		font-size: 20px;
+		line-height: 22px;
+		padding: 10px 0 10px 70px;
+	}
+	.swiper-slide .list-header{padding: 15px 0 15px 70px; }
+	.lists .list-header .icon{
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	.form-control{margin: 0 auto 25px;}
+	.list-social li{padding: 0 5px;}
+}
+@media (max-width: 600px) {
+	.hero-container,
+	.media,
+	.why,
+	.different,
+	.time,
+	.footer{padding: 20px 0;}
+	.hero-image{display: none;}
+	.hero-foreground{
+		width: 100%;
+		padding: 0 20px;
+	}
+	.box-cloud{display: none;}
+	.hero-description,
+	.time-description{
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.time-description{margin: 0 0 20px;}
+	ul.social-media li{margin: 0 0 10px;}
+	.form-control input{
+		padding: 13px 10px 12px 50px;
+		font-size: 16px;
+	}
+	.letter-icon{left:9px;}
+	.form-control .button-signup{line-height: 46px;}
+}
+@media (max-width: 520px) {
+	.form-control .hold-input{padding: 0;}
+	.form-control .holder{
+		width: 100%;
+		margin: 0 0 10px;
+	}
+	.form-control .button-signup{
+		position: relative;
+		width: 100%;
+	}
+	.footer .logo{
+		width: 140px;
+		height: 23px;
+	}
+}

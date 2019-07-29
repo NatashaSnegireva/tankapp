@@ -27,6 +27,7 @@
   line-height: 27px;
   color:#cbcdd0;
   background-color: rgba(0,0,0,0);
+  outline: none;
 }
 .swiper-pagination-bullet-active{
   background-color: #64a4d7;

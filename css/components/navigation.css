@@ -29,48 +29,43 @@
 .nav .nav-item:hover{
     color:#65a9d8;
 }
+.nav-mobile{display: none;}
 .nav-mobile ul{
     list-style-type: none;
-    display: ;
+    display: none;
     padding: 0;
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 87px;
+    right: -320px;
     background: #ffce54;
     padding:10px;
     margin: 0;
+    width: 300px;
+    -webkit-transition: right 0.6s ease;
+    -moz-transition: right 0.6s ease;
+    -o-transition: right 0.6s ease;
+    transition: right 0.6s ease;
 }
-.nav-mobile .nav-toggle{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #66aada;
+.nav-mobile ul li a{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
-.nav-mobile{
-    position: relative;
-}
-.nav-mobile{display: none;}
-.nav-mobile ul.is-open {
+.nav-mobile ul li a:hover{color:#65a9d8;}
+.is-open .nav-mobile ul{
+    right: 0;
     display: block;
 }
-/*
-
-.nav-mobile ul.is-open {
-  display: block;
-}
-.nav-mobile ul li{
-  padding: 0 10px;
-}
-.nav-mobile{
-  position: relative;
-  display: none; 
-}
-*/
-@media (min-width: 960px) {
-  /*.nav {
-    display: flex;
-  }
-  .nav-mobile {
-    display: none;
-  }*/
+.nav-mobile .nav-toggle{
+    display: block;
+    border-bottom: 17px double #66aada; 
+    border-top: 6px solid #66aada; 
+    content:"";
+    height: 28px; 
+    width:30px;
 }

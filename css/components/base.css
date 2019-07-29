@@ -13,6 +13,7 @@ html {
 
 body {  
   margin: 0;
+  width: 100%;
 }
 .container{
   max-width: 1280px;
@@ -64,4 +65,5 @@ input, textarea{
   font-size: 18px;
   line-height: 20px;
   color: #cecfd2;
+  outline: none;
 }

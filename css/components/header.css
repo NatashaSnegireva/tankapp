@@ -1,6 +1,8 @@
 header.header{
 	background-color: #ffffff;
 	padding: 28px 0 22px;
+	position: relative;
+	z-index: 2;
 }
 .header>.container{
 	display: flex;
